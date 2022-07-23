@@ -1,0 +1,49 @@
+// global
+
+*{
+	padding: 0;
+	margin: 0px;
+	box-sizing: border-box;
+	overflow-x: hidden;
+}
+
+// font sizes
+
+h1,
+h2,
+h3{
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+
+
+h1{
+	font-size: $textH1;
+	font-weight: $textBold;
+	color: $duxLight;
+}
+
+h2{
+	font-size: $textH2;
+	font-weight: $textRegu;
+	color: $duxLight
+}
+
+h3{
+	font-size: $textH3;
+	font-weight: $textSemi;
+	color: $duxGray
+}
+
+h4{
+	font-size: $textH4;
+	font-weight: $textSemi;
+	color: $duxDark;
+}
+
+p{
+	font-size: $textP;
+	font-weight: $textRegu;
+	color: $duxDark;
+}
+
