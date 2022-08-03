@@ -27,52 +27,63 @@
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
-}
-
 h1 {
   font-size: 2.5em;
   font-weight: 700;
   color: #E4EAEC;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 h2 {
   font-size: 2em;
   font-weight: 400;
   color: #E4EAEC;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 h3 {
   font-size: 1.5em;
   font-weight: 600;
   color: #242426;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 h4 {
   font-size: 1.3em;
-  font-weight: 600;
+  font-weight: 400;
   color: #0d0d0d;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
 p {
   font-size: 1.1em;
   font-weight: 400;
   color: #0d0d0d;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
-#button-form {
+.btnGlobal, .btn404, .btnServicios, .btnBanner {
   background-color: #0CBABA;
   color: #E4EAEC;
-  padding: 6px 32px 0px 32px;
-  margin-top: 10px;
-  margin-left: 50px;
+  text-decoration: none;
+  padding: 12px 32px 12px 32px;
+  margin-top: 20px;
+  margin-right: 20px;
   border-radius: 8px;
   border-style: none;
-  text-align: center;
+  font-size: 1.1em;
+}
+.btnGlobal:hover, .btn404:hover, .btnServicios:hover, .btnBanner:hover {
+  background-color: #380036;
+  cursor: pointer;
+  transition: 1.5s;
+  color: #E4EAEC;
+  text-decoration: none;
 }
 
 .texto-banner {
@@ -82,11 +93,23 @@ p {
   color: #E4EAEC;
   margin: 0px;
 }
-.texto-banner h1 {
-  padding-top: 350px;
+.texto-banner h3 {
+  padding-top: 300px;
+  color: #E4EAEC;
 }
-.texto-banner h1, .texto-banner h2 {
+.texto-banner h1, .texto-banner h2, .texto-banner h3 {
   padding-left: 50px;
+}
+
+.btnBanner {
+  float: left;
+  margin-left: 50px;
+}
+.btnBanner:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #E4EAEC;
 }
 
 article {
@@ -112,25 +135,16 @@ article h3, article p {
   box-sizing: border-box;
   padding: 10px 10px;
 }
-article a {
-  background-color: #0CBABA;
-  color: #E4EAEC;
-  text-decoration: none;
-  padding: 12px 32px 12px 32px;
-  margin-right: 20px;
-  float: right;
-  border-radius: 8px;
-  border-style: none;
-}
-article a:hover {
-  background-color: #380036;
-  cursor: pointer;
-  transition: 1.5s;
-  color: #E4EAEC;
-  text-decoration: none;
-}
 article img {
   padding: 10px 20px;
+}
+
+.padServicios {
+  padding-bottom: 30px;
+}
+
+.btnServicios {
+  float: right;
 }
 
 #clientes {
@@ -146,6 +160,42 @@ article img {
   transform: scalex(0.9) scaleY(0.9);
   cursor: pointer;
   transition: transform 0.3s;
+}
+
+.textPosition {
+  margin: 20% 100px;
+}
+
+.imgBadge {
+  width: 30%;
+  height: auto;
+  margin: 20px 35%;
+}
+
+.varianteColor {
+  color: #0d0d0d;
+}
+
+.varianteSize {
+  padding-top: 140px;
+  font-size: 6em;
+  line-height: auto;
+  overflow-y: hidden;
+}
+
+.divContent {
+  padding: 10px 100px;
+}
+
+.btn404 {
+  float: left;
+}
+
+.flexBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #formularioContacto {

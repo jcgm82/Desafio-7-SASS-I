@@ -1,17 +1,8 @@
 // Body
 
-// Banner
+// index
 
-#button-form{
-	background-color: $duxBlue;
-	color: $duxLight;
-	padding: 6px 32px 0px 32px;
-	margin-top: 10px;
-	margin-left: 50px;
-	border-radius: 8px;
-	border-style: none;
-	text-align: center;
-}
+// Banner
 
 .texto-banner{
 	width: 100%;
@@ -19,18 +10,32 @@
 	background-image: linear-gradient(45deg, $duxPurple, $duxBlue);
 	color: $duxLight;
 	margin: 0px;
-	h1{
-		padding-top: 350px;		
+	h3{
+		padding-top: 300px;
+		color: $duxLight;		
 	}
-	h1, h2{
+	h1, h2, h3{
 			padding-left: 50px;
 	}
+}
+
+.btnBanner{
+	@extend .btnGlobal;
+	float: left;
+	margin-left: 50px;
+	&:hover{
+			background-color: $none;
+			border-style: solid;
+			border-width: 1px;
+			border-color: $duxLight;	
+	}
+	
 }
 
 article{
 		margin: 20px 0px;
 		padding: 20px 12px;
-		background-color: $duxLight;
+		background-color: map-get($map:$colors,$key:'duxLight');
 		color: $duxDark;
 		border: solid;
 		border-width: 5px;
@@ -50,27 +55,27 @@ article{
 			box-sizing: border-box;
 			padding: 10px 10px;
 		}
-		a{
-			background-color: $duxBlue;
-			color: $duxLight;
-			text-decoration: none;
-			padding: 12px 32px 12px 32px;
-			margin-right: 20px;
-			float: right;
-			border-radius: 8px;
-			border-style: none;
-			&:hover{
-					background-color: $duxPurple;
-					cursor: pointer;
-					transition: 1.5s;
-					color: $duxLight;
-					text-decoration: none;			
-					}
-		}			
+
 		img{
 			padding: 10px 20px;
 		}
 }
+
+
+// Cards servicios
+
+.padServicios{
+	padding-bottom: 30px;
+}
+
+.btnServicios{
+	@extend .btnGlobal;
+	float: right;
+}
+
+
+
+// Logos Clientes
 
 #clientes{
 	height: auto;
@@ -91,3 +96,47 @@ article{
 }
 
 
+// Página Branding
+
+
+.textPosition{
+	margin: 20% 100px;
+}
+
+.imgBadge{
+	width: 30%;
+	height: auto;
+	margin: 20px 35%;
+}
+
+
+// Pagina Nosotros
+
+.varianteColor{
+	color: $duxDark;
+}
+
+// Página 404
+
+.varianteSize{
+	padding-top: 140px;
+	font-size: 6em;
+	line-height: auto;
+	overflow-y: hidden;
+}
+
+.divContent{
+	padding: 10px 100px;
+}
+
+.btn404{
+	@extend .btnGlobal;
+	float: left;
+}
+
+.flexBox{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}

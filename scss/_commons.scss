@@ -9,41 +9,44 @@
 
 // font sizes
 
-h1,
-h2,
-h3{
-	font-family: 'Montserrat', sans-serif;
-	box-sizing: border-box;
-}
-
 
 h1{
-	font-size: $textH1;
-	font-weight: $textBold;
-	color: $duxLight;
+	@include texto (2.5em, 700, $duxLight);
 }
 
 h2{
-	font-size: $textH2;
-	font-weight: $textRegu;
-	color: $duxLight
+	@include texto (2em, 400, $duxLight);
 }
 
 h3{
-	font-size: $textH3;
-	font-weight: $textSemi;
-	color: $duxGray
+	@include texto (1.5em, 600, $duxGray);
 }
 
 h4{
-	font-size: $textH4;
-	font-weight: $textSemi;
-	color: $duxDark;
+	@include texto (1.3em, 400, $duxDark);
 }
 
 p{
-	font-size: $textP;
-	font-weight: $textRegu;
-	color: $duxDark;
+	@include texto (1.1em, 400, $duxDark);
 }
 
+// buttons
+
+.btnGlobal{
+	background-color: $duxBlue;
+	color: $duxLight;
+	text-decoration: none;
+	padding: 12px 32px 12px 32px;
+	margin-top: 20px;
+	margin-right: 20px;
+	border-radius: 8px;
+	border-style: none;
+	font-size: 1.1em;
+		&:hover{
+				background-color: $duxPurple;
+				cursor: pointer;
+				transition: 1.5s;
+				color: $duxLight;
+				text-decoration: none;			
+				}
+}
